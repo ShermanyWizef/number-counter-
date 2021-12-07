@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+
+var numeroInicial = parseInt(prompt("Insira o número inicial."));
+var numeroFinal = parseInt(prompt("Insira o número final."));
+var puloDeNumero = parseInt(prompt("Quer pular quantos números?"));
+
+while(numeroInicial <= numeroFinal) {
+
+    mostra(numeroInicial);
+    numeroInicial += puloDeNumero; // irá pular quantos números o usuário quiser.
+
+}
+
+
+mostra("FIM.");
+mostra("<h1>RECARREGUE A PÁGINA PARA TENTAR NOVAMENTE.</h1>");
+
+
+</script>
